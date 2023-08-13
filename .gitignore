@@ -1,0 +1,8 @@
+# Ignore system and application-specific files
+.vscode/
+node_modules/
+*.log
+
+# Ignore sensitive or private files
+config.php
+phpmysql.php
