@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Communication Section -->
+        <section class="communication">
+            <h2>Communication</h2>
+            <div class="messages">
+                <div class="message">
+                    <h3>From Instructor</h3>
+                    <p>Message content goes here...</p>
+                </div>
+                <!-- Add more messages -->
+            </div>
+            <form action="send_message.php" method="POST" enctype="multipart/form-data">
+                <label>Recipient:</label>
+                <select name="recipient">
+                    <option value="user1">User 1</option>
+                    <option value="user2">User 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <br>
+                <label>Message:</label>
+                <textarea name="message" rows="4" cols="50"></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 E-Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="script.js"></script>
+</body>
+</html>
